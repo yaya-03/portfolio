@@ -1,0 +1,143 @@
+/* reset ---------------------------------- */
+*{
+	margin: 0;
+	padding: 0;
+	border:0;
+	outline:0;
+	font-size: 100%;
+	font-weight: normal;
+}
+html{scroll-behavior: smooth;
+    font: 14px/1.61 "Noto Sans Japanese", "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+    -webkit-font-smoothing: antialiased;}
+/* header ---------------------------------- */
+header{
+	display: flex;
+	justify-content: space-between;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+.logo{
+	height: 120px;
+	width: 230px;
+	margin: 15px;
+}
+.logo img{
+	width: 100%;
+}
+ul {
+	display: flex;
+	font-size: 20px;
+	list-style: none;
+	margin: 30px 0 0;
+}
+
+ul li{
+	padding: 30px 30px;
+}
+
+li a{
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}
+
+li a span {
+  	color: #FBC106;
+	font-weight: bold;
+}
+@media(max-width:670px){
+	header{
+		flex-direction: column;
+		align-items: center;
+	}
+	.logo{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	ul {
+		font-size: 14px;
+		list-style: none;
+	}
+	ul li{
+		padding: 10px 20px;
+	}
+	nav ul li a{
+		display: block;
+		letter-spacing: 0.1em;
+	}
+}
+
+/* body ---------------------------------- */
+section{
+	max-width: 1024px;
+	margin: 40px auto 80px;
+	padding: 0 15px;
+}
+h1{
+	line-height:30px;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	font-size: 30px;
+}
+.sb_title{
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	margin-bottom: 20px;
+	line-height:30px;
+	font-size: 25px;
+}
+
+#sec3{
+	max-width: 1024px;
+	margin: 0 auto 80px;
+	padding: 0 15px;
+}
+.flame{
+	width: 250px;
+	height: 250px;
+	margin-bottom: 15px;
+	border-radius: 15px;
+	background-position: center;
+	background-size: 100%;
+}
+#sec3 p{
+	font-size: 16px;
+	padding-bottom: 20px;
+}
+.blog_list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+h4{
+	font-size: 18px;
+	font-weight: bold;
+}
+.blog_tittle{
+	font-size: 18px;
+}
+.blog{
+	margin: 10px;
+}
+
+.blog_img1{
+	background-image: url("img/picture1.jpg");
+}
+.blog_img2{
+	background-image: url("img/picture2.jpg");
+}
+.blog_img3{
+	background-image: url("img/picture3.jpg");
+}
+
+
+/* footer ---------------------------------- */
+.copyright{
+	height: 30px;
+	text-align: center;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	background-color: #FBE706;
+	padding: 12px 0 7px;
+}
